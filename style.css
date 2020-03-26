@@ -1,0 +1,72 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    animation: BGcolors 5s infinite;
+}
+
+p, h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes BGcolors {
+    0% {background-color: skyblue;}
+    25% {background-color: steelblue;}
+    50% {background-color: teal;}
+    75% {background-color: slategrey;}
+    100% {background-color: skyblue;}
+}
+
+/*
+* {
+    border: solid black 1px;
+}
+*/
+
+.sectionHeader {
+    text-decoration: underline;
+    transition: all 3s;
+    display: flex;
+    color: rgb(146, 255, 222);
+    font-size: 5vmin;
+    justify-content: center;
+}
+
+.sectionHeader:hover {
+    color: white;
+    font-size: 8vmin;
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: center;
+    color: rgb(146, 255, 222);
+    font-size: 3vmin;
+}
+
+.spinningImage {
+    display: flex;
+    justify-content: center;
+    animation: rotation 2s infinite;
+}
+
+.spinningImage img {
+    max-width: 10%;
+    height: auto;
+}
+
+@keyframes rotation {
+    100% {transform: rotate(360deg);}
+}
+
+.shamelessPlug {
+    display: flex;
+    justify-content: center;
+    color: rgb(146, 255, 222);
+    font-size: 2vmin;
+    animation: plugging 5s infinite;
+}
+
+@keyframes plugging {
+    50% {transform: scale(50%);}
+    100% {transform: scale(100%);}
+}
